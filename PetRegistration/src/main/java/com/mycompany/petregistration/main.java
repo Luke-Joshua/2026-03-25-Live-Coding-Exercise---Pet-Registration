@@ -175,17 +175,17 @@ public class main {
     // Posted by satish, modified by community. See post 'Timeline' for change history
     // Retrieved 2026-03-25, License - CC BY-SA 4.0
     public static void clearScreen() {  //Doesn't work in netbeans terminal
+        //This loop shouldn't be needed but it's for when none of the below work
+        for (int i = 0; i < 18; i++) {
+            System.out.println("\b");
+        }
         
         System.out.print("\033[H\033[2J");
         // Source - https://stackoverflow.com/a/40041221
         // Posted by Bhuvanesh Waran, modified by community. See post 'Timeline' for change history
         // Retrieved 2026-03-25, License - CC BY-SA 3.0
         System.out.print("\033\143"); //This is an overkill for some systems (Mac / Linux / Windows)
-        
-        for (int i = 0; i < 18; i++) {
-            System.out.println("\b");
-        }
-        
+                
         System.out.flush();
         System.out.println("");
     }  
