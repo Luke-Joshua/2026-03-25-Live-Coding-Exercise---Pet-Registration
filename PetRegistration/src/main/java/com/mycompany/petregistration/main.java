@@ -32,6 +32,7 @@ public class main {
     public static void handlePetsMenu(Scanner scanIn){
         
         clearScreen(); //This cannot be inside the loop because the user must be able to see any previous error messages or work. 
+        
                 
             while(true){
                 System.out.println("");
@@ -105,6 +106,7 @@ public class main {
     public static void main(String[] args) {
         Scanner scanIn =  new Scanner(System.in);
         //This is where I will initalise a database
+                
         System.out.println("Welcome to our Pet Registration System");
         
         while(true){
